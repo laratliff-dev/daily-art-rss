@@ -32,7 +32,7 @@ Return JSON with keys: title, artist, year, image_url, description, derivative_p
   "artist": "Artist Name",
   "year": "YYYY",
   "image_url": "https://...",
-  "description": "A short paragraph explaining why this album is exceptional.",
+  "description": "A short paragraph explaining why this artwork is exceptional.",
   "derivative_prompt": "A ChatGPT prompt to create a new derivative image."
 }
 """
@@ -92,7 +92,7 @@ def get_daily_art():
             # Try parsing JSON
             artwork = json.loads(art)
 
-            full_title = f"{album['title']} - {album['artist']}"
+            full_title = f"{art['title']} - {art['artist']}"
             if full_title not in recent_art:
                 return artwork
             else:
