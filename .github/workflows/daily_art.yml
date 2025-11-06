@@ -5,6 +5,9 @@ on:
     - cron: "0 8 * * *"  # Runs every day at 8 AM UTC
   workflow_dispatch:      # Allow manual run
 
+permissions:
+  contents: write  # ✅ This grants permission to push changes
+
 jobs:
   update-feed:
     runs-on: ubuntu-latest
