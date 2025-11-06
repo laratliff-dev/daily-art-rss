@@ -5,7 +5,7 @@ from openai import OpenAI
 
 # --- Setup ---
 RSS_PATH = "index.xml"
-FEED_URL = "https://<YOUR_GITHUB_USERNAME>.github.io/<YOUR_REPO>/daily_art_feed.xml"
+FEED_URL = "https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml"
 MODEL = "gpt-5"    # Use GPT-5 (or gpt-4o-mini or gpt-4o, if needed)
 
 # --- Generate artwork recommendation dynamically ---
