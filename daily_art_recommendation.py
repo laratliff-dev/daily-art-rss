@@ -78,7 +78,7 @@ def get_daily_art():
                     {"role": "system", "content": BASE_PROMPT},
                     {"role": "user", "content": history_context}
                 ],
-                max_tokens=400
+                response_format={"type": "json_object"}
             )
 
             art = response.choices[0].message.content.strip()
