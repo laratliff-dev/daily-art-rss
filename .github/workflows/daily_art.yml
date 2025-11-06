@@ -30,6 +30,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add daily_art_feed.xml
+          git add index.xml
           git commit -m "Daily art update: $(date +'%Y-%m-%d')" || echo "No changes to commit"
           git push
