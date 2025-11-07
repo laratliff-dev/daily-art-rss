@@ -82,21 +82,18 @@ def get_daily_art():
             )
 
             art = response.choices[0].message.content.strip()
-            print(f"attempt {attempt}")
             if not art:
                 print("⚠️ Empty response from API, retrying...")
                 continue
 
             # Remove Markdown fences if present
-            print("before remove markdown")
             art = re.sub(r"^```(json)?|```$", "", art).strip()
-            print(f"after remove markdown {art}")
 
             # Try parsing JSON
             artwork = json.loads(art)
-            print(f"after parsing json {artwork}")
 
-            full_title = f"{artwork['title']} - {artwork['artist']}"
+#            full_title = f"{artwork['title']} - {artwork['artist']}"
+            full_title = f"{artwork['title']} by {artwork['artist']} ({artwork['year']})"
             if full_title not in recent_art:
                 return artwork
             else:
