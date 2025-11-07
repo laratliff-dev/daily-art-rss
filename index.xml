@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <item><title>Black Square by Kazimir Malevich (1915)</title><link>https://upload.wikimedia.org/wikipedia/commons/a/a7/Kazimir_Malevich%2C_1915%2C_Black_Suprematic_Square%2C_oil_on_linen_canvas%2C_79.5_x_79.5_cm%2C_Tretyakov_Gallery%2C_Moscow.jpg</link><description>Unveiled at the 0.10 exhibition in Petrograd, Black Square proclaimed a “zero point” for painting—a decisive break with representation that launched Suprematism and presaged Minimalism and Conceptual art. Hung high in the room like a sacred icon, it reframed the spiritual and social role of art around pure form. Its austere geometry and now-visible craquelure together embody both utopian ambition and material fragility.</description><derivativePrompt>Create an homage to Malevich’s Black Square without copying it: compose a nearly monochrome square field occupying about 70% of the canvas, slightly off-center on a warm off-white ground. Build subtle layered texture and faint craquelure; embed ghostly under-images (star charts, street grids, or circuitry) barely visible through the field. Restrict the palette to two closely related hues. Light the scene as if hung in the upper corner of a quiet gallery, evoking icon-like reverence. Export three variations representing different emotional ‘zeros’: silence, rupture, and renewal.</derivativePrompt><pubDate>Fri, 07 Nov 2025 00:39:38 EST</pubDate></item><title>Daily Artwork Recommendations</title>
+    <link>https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml</link>
+    <description>A daily exploration of influential artworks and creative inspiration.</description>
+  </channel>
+</rss>
