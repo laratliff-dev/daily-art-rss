@@ -2,7 +2,8 @@ name: Daily Art Recommendation
 
 on:
   schedule:
-    - cron: "0 8 * * *"  # Runs every day at 8 AM UTC
+    # Run every day at 11:45 UTC = 7:45am ET
+    - cron: "45 11 * * *"  
   workflow_dispatch:      # Allow manual run
 
 permissions:
