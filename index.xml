@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<rss version="2.0">
-  <channel>
-    <item><title>Under the Wave off Kanagawa (The Great Wave) by Katsushika Hokusai (1831)</title><link>https://upload.wikimedia.org/wikipedia/commons/0/0a/Great_Wave_off_Kanagawa2.jpg</link><description>Hokusai’s Great Wave revolutionized print culture by marrying a mass-produced ukiyo-e woodblock with cutting-edge Prussian blue pigment, creating an icon that traveled globally and transformed how artists saw composition, color, and motion. Its daring asymmetry, flattened space, and graphic linework profoundly influenced Impressionists and later modernists, while its theme—fragile boats versus a monumental, stylized sea—captures a timeless tension between humans and nature within a strikingly modern design language.</description><derivativePrompt>Create a contemporary poster inspired by Hokusai’s Great Wave: a towering, stylized surge rendered in layered, woodblock-like shapes with bold outlines; a limited palette dominated by deep Prussian blue, off-white foam, and soft beige paper tones; diagonal, dynamic composition; small human-made elements (sleek boats, boards, or wind turbines) dwarfed by the wave; a distant, simplified mountain silhouette; subtle paper grain and print misregistration effects. Aim for crisp, high-contrast forms, rhythmic repetition, and a sense of sublime power—traditional technique meets modern minimalism.</derivativePrompt><pubDate>Fri, 07 Nov 2025 00:29:57 EST</pubDate></item><title>Daily Artwork Recommendations</title>
-    <link>https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml</link>
-    <description>A daily exploration of influential artworks and creative inspiration.</description>
-  </channel>
-</rss>
