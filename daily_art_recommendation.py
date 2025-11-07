@@ -43,7 +43,7 @@ def get_recent_art(days=30):
     if not os.path.exists(RSS_PATH):
         return []
     
-    tree = ET.parse(RSS_FILE)
+    tree = ET.parse(RSS_PATH)
     root = tree.getroot()
     channel = root.find("channel")
     items = channel.findall("item")
