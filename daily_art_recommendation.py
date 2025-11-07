@@ -82,6 +82,7 @@ def get_daily_art():
             )
 
             art = response.choices[0].message.content.strip()
+            print(f"attempt {attempt}: {art}")
             if not art:
                 print("⚠️ Empty response from API, retrying...")
                 continue
