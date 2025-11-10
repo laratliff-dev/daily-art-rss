@@ -134,7 +134,10 @@ def add_item_to_rss(artwork):
     ET.SubElement(item, "derivativePrompt").text = artwork["derivative_prompt"]
     ET.SubElement(item, "pubDate").text = datetime.datetime.now().strftime("%a, %d %b %Y %H:%M:%S EST")
 
-    channel.insert(0, item)
+#    channel.insert(0, item)
+    # insert a new line before inserting the new item in the hopes it cleans up the RSS and avoids GitHub detecting excessive changes daily
+    channel.insert(0, ET.Comment("\n"))
+    channel.insert(1, item)  
     tree.write(RSS_PATH, encoding="utf-8", xml_declaration=True)
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
