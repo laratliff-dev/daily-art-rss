@@ -25,7 +25,7 @@ Include:
 - Year created
 - A short paragraph explaining why it’s significant
 - A public link to an image (Wikipedia Commons preferred)
-- A creative prompt for making a derivative inspired artwork
+- A creative prompt for making a derivative inspired artwork providing sufficient direction, theming, and guidelines for the GenAI tool
 
 Return JSON with keys: title, artist, year, image_url, description, derivative_prompt.
 {
@@ -134,10 +134,7 @@ def add_item_to_rss(artwork):
     ET.SubElement(item, "derivativePrompt").text = artwork["derivative_prompt"]
     ET.SubElement(item, "pubDate").text = datetime.datetime.now().strftime("%a, %d %b %Y %H:%M:%S EST")
 
-#    channel.insert(0, item)
-    # insert a new line before inserting the new item in the hopes it cleans up the RSS and avoids GitHub detecting excessive changes daily
-    channel.insert(0, ET.Comment("\n"))
-    channel.insert(1, item)  
+    channel.insert(0, item)  
     tree.write(RSS_PATH, encoding="utf-8", xml_declaration=True)
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
