@@ -14,10 +14,12 @@ MODEL = "gpt-4o-mini"
 
 # --- Generate artwork recommendation dynamically ---
 BASE_PROMPT = """
+System Prompt:
 You are an art historian and expert in global art history.
 You must only provide information that you can confirm with high confidence from well-established, widely documented artworks.
 If the requested output cannot be produced without guessing or inventing details, you must decline using the format described below.
 
+User Prompt:
 Rules:
 - Do NOT invent or guess any artwork, artist, title, year, or link.
 - Only choose artworks that have a dedicated Wikipedia article, ensuring verifiable existence.
