@@ -1,6 +1,5 @@
 import os
 import datetime
-import feedgenerator
 import json
 import re
 from xml.etree import ElementTree as ET
@@ -35,7 +34,7 @@ Rules:
 
 Include the following fields in the reponse:
 - title: Exact artwork title as listed in Wikipedia.
-- artist: Artist’s full name.
+- artist: Artist's full name.
 - year: Year of creation (or range), only if historically verified.
 - image_url: Valid Wikimedia Commons URL, or null if unavailable.
 - description: A short paragraph explaining the work’s historical significance.
@@ -141,15 +140,57 @@ def add_item_to_rss(artwork):
     root = tree.getroot()
     channel = root.find("channel")
 
+    # Create item with proper structure
     item = ET.Element("item")
-    ET.SubElement(item, "title").text = f"{artwork['title']} by {artwork['artist']} ({artwork['year']})"
-    ET.SubElement(item, "link").text = artwork["image_url"]
-    ET.SubElement(item, "description").text = artwork["description"]
-    ET.SubElement(item, "derivativePrompt").text = artwork["derivative_prompt"]
-    ET.SubElement(item, "pubDate").text = datetime.datetime.now().strftime("%a, %d %b %Y %H:%M:%S EST")
+    
+    # Title
+    title = f"{artwork['title']} by {artwork['artist']} ({artwork['year']})"
+    ET.SubElement(item, "title").text = title
+    
+    # Link to image
+    ET.SubElement(item, "link").text = artwork["image_url"] or ""
+    
+    # GUID for unique identification (RSS compliance)
+    guid = ET.SubElement(item, "guid")
+    guid.text = f"{FEED_URL}#{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}"
+    guid.set("isPermaLink", "false")
+    
+    # Combined description with derivative prompt
+    description_html = f"""<![CDATA[
+<p>{artwork["description"]}</p>
+<hr/>
+<h3>Creative Derivative Prompt</h3>
+<p><em>{artwork["derivative_prompt"]}</em></p>
+]]>"""
+    desc_elem = ET.SubElement(item, "description")
+    desc_elem.text = description_html
+    
+    # Publication date in RFC-822 format with GMT
+    pubdate = datetime.datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S GMT")
+    ET.SubElement(item, "pubDate").text = pubdate
 
-    channel.insert(0, item)  
+    # Insert at the beginning of the feed
+    channel.insert(0, item)
+    
+    # Pretty print the XML
+    indent_xml(root)
     tree.write(RSS_PATH, encoding="utf-8", xml_declaration=True)
+
+def indent_xml(elem, level=0):
+    """Add proper indentation to XML for readability."""
+    i = "\n" + level * "  "
+    if len(elem):
+        if not elem.text or not elem.text.strip():
+            elem.text = i + "  "
+        if not elem.tail or not elem.tail.strip():
+            elem.tail = i
+        for child in elem:
+            indent_xml(child, level + 1)
+        if not child.tail or not child.tail.strip():
+            child.tail = i
+    else:
+        if level and (not elem.tail or not elem.tail.strip()):
+            elem.tail = i
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
