@@ -2,6 +2,18 @@
 <rss version="2.0">
   <channel>
     <item>
+      <title>Impression, Sunrise by Claude Monet (1872)</title>
+      <link>https://commons.wikimedia.org/wiki/File:Claude_Monet,_Impression,_soleil_levant.jpg</link>
+      <guid isPermaLink="false">https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml#20260101114914</guid>
+      <description>&lt;![CDATA[
+&lt;p&gt;Impression, Sunrise is a seminal work that played a pivotal role in the development of the Impressionist movement. Completed in 1872, it depicts a hazy morning scene at the port of Le Havre, France, with boats and a rising sun. The painting emphasizes light and atmosphere rather than detailed realism, showcasing Monet's innovative approach to color and brushstroke techniques. It inspired the name of the Impressionist movement and significantly influenced the direction of modern art.&lt;/p&gt;
+&lt;hr/&gt;
+&lt;h3&gt;Creative Derivative Prompt&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Create an artwork inspired by Monet's Impression, Sunrise, focusing on a serene and tranquil morning at a coastal harbor. Use a similar color palette with soft blues, oranges, and subtle contrasts to depict the reflections on water. Capture the essence of light as it breaks through the morning fog, emphasizing the atmosphere and mood rather than fine details.&lt;/em&gt;&lt;/p&gt;
+]]&gt;</description>
+      <pubDate>Thu, 01 Jan 2026 11:49:14 GMT</pubDate>
+    </item>
+    <item>
       <title>The Weeping Woman by Pablo Picasso (1937)</title>
       <link>https://commons.wikimedia.org/wiki/File:Pablo_Picasso_-_Weeping_Woman_-_Google_Art_Project.jpg</link>
       <guid isPermaLink="false">https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml#20251231114900</guid>
