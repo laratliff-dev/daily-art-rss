@@ -9,7 +9,7 @@ from openai import OpenAI
 RSS_PATH = "index.xml"
 FEED_URL = "https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml"
 # MODEL = "gpt-5"    # Use GPT-5 (or gpt-4o-mini or gpt-4o, if needed)
-MODEL = "gpt-4o-mini"
+MODEL = "gpt-4.1-mini" #"gpt-4o-mini"
 
 # --- Generate artwork recommendation dynamically ---
 BASE_PROMPT = """
@@ -98,6 +98,10 @@ def get_daily_art():
             art = response.choices[0].message.content.strip()
             if not art:
                 print("⚠️ Empty response from API, retrying...")
+                continue
+
+            if "no_valid_artwork_available" in art:
+                print("⚠️ No valid artwork available, retrying...")
                 continue
 
             # Remove Markdown fences if present
