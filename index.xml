@@ -2,6 +2,18 @@
 <rss version="2.0">
   <channel>
     <item>
+      <title>The Arnolfini Portrait by Jan van Eyck (1434)</title>
+      <link>https://commons.wikimedia.org/wiki/File:Van_Eyck_-_Arnolfini_Portrait.jpg</link>
+      <guid isPermaLink="false">https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml#20260112115122</guid>
+      <description>&lt;![CDATA[
+&lt;p&gt;The Arnolfini Portrait is renowned for its meticulous detail and use of oil paints to achieve rich textures and intricate light effects. It is celebrated as one of the earliest examples of Northern Renaissance art and considered a masterpiece that demonstrates the potential of oil painting techniques. The work also contains complex iconography related to marriage and domestic life, making it a rich subject for art historical analysis.&lt;/p&gt;
+&lt;hr/&gt;
+&lt;h3&gt;Creative Derivative Prompt&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Create a detailed and realistic portrait mimicking early 15th-century Northern Renaissance oil painting techniques, depicting a contemporary couple in an intimate domestic setting filled with symbolic objects reflecting modern relationships and cultural identity. Emphasize intricate textures, reflective surfaces, and natural light effects to capture the essence of Jan van Eyck's style.&lt;/em&gt;&lt;/p&gt;
+]]&gt;</description>
+      <pubDate>Mon, 12 Jan 2026 11:51:22 GMT</pubDate>
+    </item>
+    <item>
       <title>The Fighting Temeraire by J. M. W. Turner (1839)</title>
       <link>https://commons.wikimedia.org/wiki/File:Turner,_The_Fighting_Temeraire.jpg</link>
       <guid isPermaLink="false">https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml#20260111114911</guid>
