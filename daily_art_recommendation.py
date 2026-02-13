@@ -11,6 +11,10 @@ FEED_URL = "https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml"
 # MODEL = "gpt-5"    # Use GPT-5 (or gpt-4o-mini or gpt-4o, if needed)
 MODEL = "gpt-4.1-mini" #"gpt-4o-mini"
 
+MAX_TOKENS = 400
+TEMPERATURE = 1.3  # Higher temperature for more variability (default: 1.0)
+TOP_P = 0.97       # Nucleus sampling for diverse outputs
+
 # --- Generate artwork recommendation dynamically ---
 BASE_PROMPT = """
 System Prompt:
@@ -26,9 +30,10 @@ Rules:
 - Do NOT repeat any artwork or artist from the provided exclusion list.
   - (Assume the provided list is authoritative. If uncertain whether repetition occurs, err on the side of excluding.)
 - For the image URL:
-  - Prefer a Wikimedia Commons URL only if it exists and is clearly associated with the artwork.
+  - Prefer a recognized museum website URL only if it exists and is clearly associated with the artwork.
+  - Alternatively a Wikimedia Commons URL only if it exists and is clearly associated with the artwork.
   - Secondary source from Wikipedia is an acceptable alternative.
-  - If no valid Wikimedia or Wikipedia image exists, return "image_url": null (do NOT fabricate or approximate URLs).
+  - If no valid museum, Wikimedia, or Wikipedia image exists, return "image_url": null (do NOT fabricate or approximate URLs).
 - All information must be verifiable and historically accurate.
 - If at any point confidence drops below 95%, return the error JSON above.
 
@@ -36,7 +41,7 @@ Include the following fields in the reponse:
 - title: Exact artwork title as listed in Wikipedia.
 - artist: Artist's full name.
 - year: Year of creation (or range), only if historically verified.
-- image_url: Valid Wikimedia Commons URL, or null if unavailable.
+- image_url: Valid URL from an authoritative source such as a musueum site, or null if unavailable.
 - description: A short paragraph explaining the work’s historical significance.
 - derivative_prompt: A detailed creative prompt for generating a derivative artwork.
 
@@ -89,9 +94,18 @@ def get_daily_art():
             response = client.chat.completions.create(
                 model=MODEL,
                 messages=[
-                    {"role": "system", "content": BASE_PROMPT},
-                    {"role": "user", "content": history_context}
+                    {
+                        "role": "system", 
+                        "content": f"{BASE_PROMPT}\n\n{history_context}"
+                    },
+                    {
+                        "role": "user", 
+                        "content": "Please recommend one artwork following the rules above."
+                    }
                 ],
+                max_tokens=MAX_TOKENS,
+                temperature=TEMPERATURE,
+                top_p=TOP_P,
                 response_format={"type": "json_object"}
             )
 
@@ -110,7 +124,6 @@ def get_daily_art():
             # Try parsing JSON
             artwork = json.loads(art)
 
-#            full_title = f"{artwork['title']} - {artwork['artist']}"
             full_title = f"{artwork['title']} by {artwork['artist']} ({artwork['year']})"
             if full_title not in recent_art:
                 return artwork
