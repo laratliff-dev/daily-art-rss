@@ -2,8 +2,13 @@ import os
 import datetime
 import json
 import re
+import truststore
 from xml.etree import ElementTree as ET
 from openai import OpenAI
+
+# Use Windows native certificate store for SSL verification
+# (required for corporate proxies with non-standard CA certificates)
+truststore.inject_into_ssl()
 
 # --- Setup ---
 RSS_PATH = "index.xml"
@@ -11,7 +16,7 @@ FEED_URL = "https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml"
 # MODEL = "gpt-5"    # Use GPT-5 (or gpt-4o-mini or gpt-4o, if needed)
 MODEL = "gpt-5-mini" #"gpt-4.1-mini"
 
-MAX_TOKENS = 400
+MAX_TOKENS = 4096  # Reasoning models need extra budget for internal chain-of-thought tokens
 TEMPERATURE = 1.3  # Higher temperature for more variability (default: 1.0)
 TOP_P = 0.97       # Nucleus sampling for diverse outputs
 
@@ -109,10 +114,17 @@ def get_daily_art():
                 response_format={"type": "json_object"}
             )
 
-            art = response.choices[0].message.content.strip()
-            if not art:
+            # Check if response was truncated due to token budget
+            finish_reason = response.choices[0].finish_reason
+            if finish_reason == "length":
+                print("⚠️ Response truncated — consider increasing max_completion_tokens. Retrying...")
+                continue
+
+            art = response.choices[0].message.content
+            if not art or not art.strip():
                 print("⚠️ Empty response from API, retrying...")
                 continue
+            art = art.strip()
 
             if "no_valid_artwork_available" in art:
                 print("⚠️ No valid artwork available, retrying...")
