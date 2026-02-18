@@ -104,7 +104,7 @@ def get_daily_art():
                     }
                 ],
                 max_completion_tokens=MAX_TOKENS, #max_tokens=MAX_TOKENS,
-                temperature=TEMPERATURE,
+                #temperature=TEMPERATURE, --> skip for gpt-5 reasoning model, not supported for anything other than 1
                 top_p=TOP_P,
                 response_format={"type": "json_object"}
             )
