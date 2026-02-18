@@ -9,7 +9,7 @@ from openai import OpenAI
 RSS_PATH = "index.xml"
 FEED_URL = "https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml"
 # MODEL = "gpt-5"    # Use GPT-5 (or gpt-4o-mini or gpt-4o, if needed)
-MODEL = "gpt-4.1-mini" #"gpt-4o-mini"
+MODEL = "gpt-5-mini" #"gpt-4.1-mini"
 
 MAX_TOKENS = 400
 TEMPERATURE = 1.3  # Higher temperature for more variability (default: 1.0)
