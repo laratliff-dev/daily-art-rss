@@ -103,7 +103,7 @@ def get_daily_art():
                         "content": "Please recommend one artwork following the rules above."
                     }
                 ],
-                max_tokens=MAX_TOKENS,
+                max_completion_tokens=MAX_TOKENS, #max_tokens=MAX_TOKENS,
                 temperature=TEMPERATURE,
                 top_p=TOP_P,
                 response_format={"type": "json_object"}
