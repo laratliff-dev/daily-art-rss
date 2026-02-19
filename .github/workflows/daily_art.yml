@@ -23,7 +23,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install feedgenerator openai
+          pip install feedgenerator openai truststore
 
       - name: Run daily art script
         env:
