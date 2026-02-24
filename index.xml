@@ -2,6 +2,18 @@
 <rss version="2.0">
   <channel>
     <item>
+      <title>The Blue Boy by Thomas Gainsborough (c. 1770)</title>
+      <link>https://en.wikipedia.org/wiki/The_Blue_Boy</link>
+      <guid isPermaLink="false">https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml#20260224120648</guid>
+      <description>&lt;![CDATA[
+&lt;p&gt;The Blue Boy is a full-length portrait by Thomas Gainsborough, painted around 1770 and long celebrated as a masterpiece of 18th‑century British portraiture. The work—believed to depict Jonathan Buttall—is notable for its striking ultramarine costume, elegant pose, and Gainsborough’s fluid, painterly handling that integrates figure and landscape. It has become an iconic representation of period costume and the artist’s technical command, and is part of the collection at The Huntington in San Marino, California.&lt;/p&gt;
+&lt;hr/&gt;
+&lt;h3&gt;Creative Derivative Prompt&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Create a high-resolution oil‑painting–style image inspired by Thomas Gainsborough’s The Blue Boy (c. 1770). Depict a single youthful figure in a dramatic, full-length pose wearing a richly textured blue coat and knee-breeches reminiscent of 17th‑/18th‑century costume. Place the figure slightly turned, one hand relaxed at the side and the other resting on a prop (such as a walking stick), set against a softly lit, natural landscape with distant trees and a low horizon. Emphasize painterly brushwork and layered glazing: luminous ultramarine fabric rendered with visible strokes, warm flesh tones with subtle highlights, and a loose, atmospheric background that contrasts with detailed textile textures. Lighting should be warm and directional, producing gentle modeling of the face and costume. Aim for a balance between refined portrait detail (face, hands, textiles) and expressive, impressionistic handling of the surroundings. Output color palette: deep blues, warm ochres, muted greens, and soft warm neutrals. Style: classical portrait composition with contemporary clarity—retain the dignified stance and costume reference but reinterpret mood with slightly softer, dreamlike atmosphere. Format: vertical composition suitable for print or gallery display, high-resolution (at least 3000 px on the long side).&lt;/em&gt;&lt;/p&gt;
+]]&gt;</description>
+      <pubDate>Tue, 24 Feb 2026 12:06:48 GMT</pubDate>
+    </item>
+    <item>
       <title>The Ambassadors by Hans Holbein the Younger (1533)</title>
       <link>https://www.nationalgallery.org.uk/paintings/hans-holbein-the-younger-the-ambassadors</link>
       <guid isPermaLink="false">https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml#20260223120458</guid>
