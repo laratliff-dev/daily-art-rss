@@ -2,6 +2,18 @@
 <rss version="2.0">
   <channel>
     <item>
+      <title>Portrait of Wally by Egon Schiele (1912)</title>
+      <link>https://en.wikipedia.org/wiki/Portrait_of_Wally</link>
+      <guid isPermaLink="false">https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml#20260323123221</guid>
+      <description>&lt;![CDATA[
+&lt;p&gt;Portrait of Wally (1912) is one of Egon Schiele’s best-known portraits of his companion Walburga "Wally" Neuzil. The work exemplifies Schiele’s raw, angular line, psychological intensity, and economy of color that helped define Austrian Expressionism. The painting is also historically significant for its provenance: it became the center of a high-profile Nazi-era looted-art and restitution dispute when it surfaced in an Austrian collection and was later seized by U.S. authorities during an exhibition in New York, bringing international attention to issues of wartime dispossession and museum provenance research.&lt;/p&gt;
+&lt;hr/&gt;
+&lt;h3&gt;Creative Derivative Prompt&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Create an original portrait inspired by the formal and emotional language of Schiele's 1912 Portrait of Wally without copying the composition or face. Depict a single seated figure in a three-quarter pose cropped at mid-thigh, with elongated, slightly angular limbs and a turned, introspective head. Use strong, expressive contour lines—ink-like, slightly uneven—overlaid on flat planes of color: muted ochres, desaturated greens, warm umbers and a few sharp crimson accents. Keep the background spare and neutral to emphasize the figure; include subtle paper texture and faint craquelure to evoke an aged work on paper. Convey psychological tension through a taut posture, hands held together or clasping fabric, and a face that balances vulnerability and defiance. Render with mixed media look: watercolor or gouache washes for color fields, bold dry-brush or charcoal for outlines, and minimal glazing for shadows. Lighting should be soft but directional, creating gentle modeling without full realism. Produce an original sitter (do not reproduce Walburga Neuzil or any recognizably historical face) and add one contemporary detail—e.g., a simple modern accessory or garment—to situate the image in the present while echoing early 20th-century portrait sensibilities. Output at high resolution suitable for fine-art print.&lt;/em&gt;&lt;/p&gt;
+]]&gt;</description>
+      <pubDate>Mon, 23 Mar 2026 12:32:21 GMT</pubDate>
+    </item>
+    <item>
       <title>Isle of the Dead by Arnold Böcklin (1880–1886)</title>
       <link>https://en.wikipedia.org/wiki/Isle_of_the_Dead</link>
       <guid isPermaLink="false">https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml#20260322115606</guid>
