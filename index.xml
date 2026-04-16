@@ -2,6 +2,18 @@
 <rss version="2.0">
   <channel>
     <item>
+      <title>Book of Kells by Unknown (c. 800)</title>
+      <link>https://en.wikipedia.org/wiki/Book_of_Kells</link>
+      <guid isPermaLink="false">https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml#20260416124849</guid>
+      <description>&lt;![CDATA[
+&lt;p&gt;The Book of Kells is an illuminated Latin Gospel book created around the turn of the 9th century and is a masterpiece of Insular art. Renowned for its extraordinarily intricate interlace, zoomorphic motifs, and vibrant pigment work across elaborately decorated folios, it represents the high point of medieval manuscript illumination and is a key witness to the fusion of Irish, Pictish and Anglo-Saxon artistic traditions. The manuscript is now housed at Trinity College, Dublin, and is celebrated both for its artistic innovation and its cultural-historical importance to early medieval Christianity and Insular artistry.&lt;/p&gt;
+&lt;hr/&gt;
+&lt;h3&gt;Creative Derivative Prompt&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Create a high-resolution digital folio inspired by the visual language of the Book of Kells. Compose a single illuminated page centered on a large ornate initial letter that incorporates intricate Celtic interlace, knotted ribbons, and stylized animal forms that weave through and around the letter. Use a rich medieval palette—deep lapis-like blues, verdant greens, warm ochres, and ruby reds—accented with simulated gold-leaf highlights and subtle vellum texture. Include small marginalia: whimsical hybrid creatures, miniature birds, and geometric spirals that echo Insular motifs, while maintaining clear negative space so the central letter reads at a glance. Render fine penwork with visible hatching and stippling, and add faint signs of age (softened edges, slight discoloration) for authenticity. Style: contemporary digital painting that faithfully references the structural elements, compositions, and decorative techniques of early medieval illuminated manuscripts without copying any specific folio. Output as a flat image at least 3000 × 4000 pixels, with layers for background texture, color, linework, and gold effects.&lt;/em&gt;&lt;/p&gt;
+]]&gt;</description>
+      <pubDate>Thu, 16 Apr 2026 12:48:49 GMT</pubDate>
+    </item>
+    <item>
       <title>I and the Village by Marc Chagall (1911)</title>
       <link>https://en.wikipedia.org/wiki/I_and_the_Village</link>
       <guid isPermaLink="false">https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml#20260415124448</guid>
