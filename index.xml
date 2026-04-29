@@ -2,6 +2,18 @@
 <rss version="2.0">
   <channel>
     <item>
+      <title>The Milkmaid (Vermeer) by Johannes Vermeer (c. 1657–1658)</title>
+      <link>https://www.rijksmuseum.nl/en/collection/SK-A-2344</link>
+      <guid isPermaLink="false">https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml#20260429131051</guid>
+      <description>&lt;![CDATA[
+&lt;p&gt;The Milkmaid is a celebrated Dutch Golden Age genre painting by Johannes Vermeer, notable for its quiet domestic subject, masterful treatment of natural light, and meticulous observation of texture and material (from the coarse bread to the gleam on the Delft tiles). The work exemplifies Vermeer's sensitive, intimate scenes of ordinary life and his refined handling of color and light to create a concentrated, contemplative image that has become emblematic of 17th‑century Dutch painting.&lt;/p&gt;
+&lt;hr/&gt;
+&lt;h3&gt;Creative Derivative Prompt&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Create a high-resolution derivative image inspired by Johannes Vermeer's The Milkmaid while clearly transforming the original. Maintain the central composition of a solitary woman pouring from a vessel at a table bathed in strong, directional natural light from a left-side window. Reimagine the setting as a contemporary urban kitchen: replace period props with modern equivalents (a simple ceramic pitcher → a matte steel milk jug; coarse loaf of bread → a sliced artisan loaf on a wooden board; Delft tiles → textured concrete backsplash). Preserve the sense of quiet concentration and the interplay of light and shadow—use a soft, warm morning light that produces distinct, cast shadows and reveals surface textures. Emphasize tactile details (fabric weave, ceramic glaze, reflections on metal) and a restrained color palette dominated by deep ultramarine/indigo accents, warm yellows, muted ochres, and neutral grays. Render in a painterly, realistic style with subtle visible brushwork and finely modeled forms; aim for a balance between photorealistic detail and painterly surface. Include small contemporary touches that suggest modern life without distracting (a simple ring on the woman's finger, a folded tea towel). Compose so the figure fills the midground and the background remains minimal but contextually suggestive (shelf with a single jar, soft steam above the table). Output as a digital painting suitable for large-format print, 300 dpi, with naturalistic color grading and a calm, meditative mood.&lt;/em&gt;&lt;/p&gt;
+]]&gt;</description>
+      <pubDate>Wed, 29 Apr 2026 13:10:51 GMT</pubDate>
+    </item>
+    <item>
       <title>Le Déjeuner sur l'herbe by Édouard Manet (1863)</title>
       <link>https://en.wikipedia.org/wiki/Le_D%C3%A9jeuner_sur_l%27herbe</link>
       <guid isPermaLink="false">https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml#20260428131956</guid>
