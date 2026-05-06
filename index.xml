@@ -2,6 +2,18 @@
 <rss version="2.0">
   <channel>
     <item>
+      <title>Whaam! by Roy Lichtenstein (1963)</title>
+      <link>https://en.wikipedia.org/wiki/Whaam!</link>
+      <guid isPermaLink="false">https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml#20260506132001</guid>
+      <description>&lt;![CDATA[
+&lt;p&gt;Whaam! (1963) is a large-scale diptych by Roy Lichtenstein that exemplifies Pop Art's appropriation and transformation of comic-strip imagery. Executed in bold primary colors, thick black outlines, and Ben-Day dot patterns, the work condenses an explosive aerial combat moment into flattened, graphic form—critiquing mass-media visual language while elevating lowbrow imagery to monumental fine art. It remains one of Lichtenstein's most iconic works and a touchstone in discussions of appropriation, popular culture, and the aesthetics of mechanical reproduction.&lt;/p&gt;
+&lt;hr/&gt;
+&lt;h3&gt;Creative Derivative Prompt&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Create a new large-scale diptych image that reimagines the graphic immediacy and visual vocabulary of mid-20th-century comic panels without copying any specific source. Use two adjoining vertical panels: left panel shows a tense pre-impact scene (e.g., a lone animal, spacecraft, or abstracted vehicle caught mid-motion) and the right panel shows the climax/aftermath (an explosion, collision, or sudden transformation). Employ a restrained palette of saturated primary colors (red, yellow, blue) with high-contrast black outlines. Apply a halftone/Ben-Day dot texture across flat color areas to evoke printed comic-book surfaces, but vary dot scale between foreground and background to create spatial depth. Use staccato, hand-lettered onomatopoeia (one new word, e.g., “KRAAK!” or “SHARD!”) integrated into the composition as a large graphic element; render the text with thick stroke and slight perspective as part of the action. Compose with simplified, geometric forms and compressed perspective; avoid painterly shading—use crisp shapes and minimal gradients. Aim for a cinematic sense of motion (diagonals, speed lines) and emotional irony: the depiction should feel both theatrical and slightly detached, prompting viewers to question spectacle and violence in visual culture. Output as a high-resolution digital image suitable for large-format print (minimum 4000 px on the longest side) and provide color swatches and a short artist note (2–3 sentences) explaining the conceptual twist you introduced (subject substitution, mood change, or cultural reframing).&lt;/em&gt;&lt;/p&gt;
+]]&gt;</description>
+      <pubDate>Wed, 06 May 2026 13:20:01 GMT</pubDate>
+    </item>
+    <item>
       <title>The Death of Socrates by Jacques-Louis David (1787)</title>
       <link>https://en.wikipedia.org/wiki/The_Death_of_Socrates</link>
       <guid isPermaLink="false">https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml#20260505125430</guid>
