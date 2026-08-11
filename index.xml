@@ -2,6 +2,18 @@
 <rss version="2.0">
   <channel>
     <item>
+      <title>The Treachery of Images by René François Ghislain Magritte (1929)</title>
+      <link>https://en.wikipedia.org/wiki/The_Treachery_of_Images</link>
+      <guid isPermaLink="false">https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml#20260811120526</guid>
+      <description>&lt;![CDATA[
+&lt;p&gt;The Treachery of Images (La trahison des images) is a 1929 painting by René Magritte that famously pairs a meticulously painted pipe with the inscription "Ceci n'est pas une pipe" ("This is not a pipe"). The work is a landmark of Surrealism and modern art more broadly because it challenges the viewer's assumptions about representation and reality, emphasizing the distinction between an object and its depiction and anticipating later theoretical work in semiotics and visual culture.&lt;/p&gt;
+&lt;hr/&gt;
+&lt;h3&gt;Creative Derivative Prompt&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Create an original, high-resolution digital painting that reinterprets Magritte's conceptual paradox without copying the original composition. Center the composition on a single, clearly rendered contemporary object (for example, a smartphone, a transparent glass jar, or a single red apple) placed against a neutral, softly textured background. Below the object, include a short, hand-painted sentence in elegant, slightly calligraphic script that states a negation of the object's literal identity (e.g., "This is not a smartphone"), in the same language as the gallery label you imagine. Visual style: photorealistic object rendering with subtle painterly brushwork on the background; cool diffuse lighting from upper left producing a gentle shadow; limited, muted color palette (cream background, object in a single dominant hue with naturalistic shading). Composition: object centered, occupying roughly the middle third of the vertical space; caption placed on a single line beneath the object with generous letter spacing; maintain ample negative space to emphasize the conceptual gap between image and text. Mood/idea: solicit a quiet, contemplative atmosphere that prompts the viewer to question representation, technology, and authenticity. Deliverables: produce a version at 4000×3000 px, provide layered source file (separate layers for object, background texture, and caption) and a 1200×900 px JPEG for preview. Include an alt-text (1–2 sentences) describing the object and the caption for accessibility.&lt;/em&gt;&lt;/p&gt;
+]]&gt;</description>
+      <pubDate>Tue, 11 Aug 2026 12:05:26 GMT</pubDate>
+    </item>
+    <item>
       <title>The Crystal Palace by Joseph Paxton (1851)</title>
       <link>https://en.wikipedia.org/wiki/The_Crystal_Palace</link>
       <guid isPermaLink="false">https://laratliff-dev.github.io/daily-art-rss/daily_art_feed.xml#20260810120632</guid>
